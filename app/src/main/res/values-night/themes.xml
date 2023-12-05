@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WalletBill" parent="Theme.Material3.Dark">
+<!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/Primary</item>-->
+<!--        <item name="colorPrimaryVariant">@color/PrimaryVariant</item>-->
+<!--        <item name="colorOnPrimary">@color/OnPrimary</item>-->
+<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/Secondary</item>-->
+<!--        <item name="colorSecondaryVariant">@color/SecondaryVariant</item>-->
+<!--        <item name="colorOnSecondary">@color/OnSecondary</item>-->
+<!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    </style>
+    <style name="Theme.WalletBill.TopBar" parent="Theme.Material3.Dark" />
+</resources>

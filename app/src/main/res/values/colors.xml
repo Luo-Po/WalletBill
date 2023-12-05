@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand color. -->
+    <color name="Primary">?attr/colorPrimary</color>
+    <color name="PrimaryVariant">?attr/colorPrimaryVariant</color>
+    <color name="OnPrimary">?attr/colorOnPrimary</color>
+    <!-- Secondary brand color. -->
+    <color name="Secondary">?attr/colorSecondary</color>
+    <color name="SecondaryVariant">?attr/colorSecondaryVariant</color>
+    <color name="OnSecondary">?attr/colorOnSecondary</color>
+
+    <color name="Background">?attr/colorBackgroundFloating</color>
+
+
+</resources>
