@@ -56,7 +56,13 @@ dependencies {
     val material_version = "1.0.1"
     val room_version = "2.5.0"
     val recyclerview_version = "1.2.1"
+    val multitype_version="4.3.0"
 
+    //PureWriter
+    //FullDraggableDrawer
+    implementation("com.drakeet.drawer:drawer:1.0.3")
+    //multitype
+    implementation("com.drakeet.multitype:multitype:$multitype_version")
 
     //material3
     implementation("androidx.compose.material3:material3:$material_version")
@@ -90,9 +96,10 @@ dependencies {
 
 
 
+    implementation("com.google.android.material:material:1.8.0")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.8.0")
+    implementation("androidx.drawerlayout:drawerlayout:1.1.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")

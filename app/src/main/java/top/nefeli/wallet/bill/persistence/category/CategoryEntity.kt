@@ -5,12 +5,12 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 
-@Entity(tableName = "BillCategory")
+@Entity(tableName = "Category")                 // 账单分类
 data class CategoryEntity(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0L,
-    @ColumnInfo(name = "PrimaryCategory")
-    val primaryCategory: String,  // 指明交易的主要类别
-    @ColumnInfo(name = "SecondaryCategory")
-    val secondaryCategory: String,  // 指明交易的次要类别
+    @ColumnInfo(name = "PrimaryCategory")       // 指明交易的主要类别
+    val primaryCategory: String,
+    @ColumnInfo(name = "SecondaryCategory")     // 指明交易的次要类别
+    val secondaryCategory: String,
 )

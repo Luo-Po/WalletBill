@@ -24,10 +24,10 @@
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
-        android:id="@+id/nav_add"
-        android:name="top.nefeli.wallet.bill.module.add.AddFragment"
-        android:label="@string/menu_add"
-        tools:layout="@layout/fragment_add" />
+        android:id="@+id/nav_add_bill"
+        android:name="top.nefeli.wallet.bill.module.add.AddBillFragment"
+        android:label="@string/menu_add_bill"
+        tools:layout="@layout/fragment_add_bill" />
 
     <fragment
         android:id="@+id/nav_settings"

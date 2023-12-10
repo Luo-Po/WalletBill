@@ -4,15 +4,14 @@ package top.nefeli.wallet.bill.module.main
  * @author Nefeli
  */
 import android.os.Bundle
-import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 import top.nefeli.wallet.bill.R
 import top.nefeli.wallet.bill.base.BaseActivity
 import top.nefeli.wallet.bill.databinding.ActivityMainBinding
@@ -33,7 +32,8 @@ class MainActivity : BaseActivity() {
         binding.appBarMain.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
-        } // tab
+        } // float tab
+
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main) //获取navController,通过MainActivity空白的NavHostFragment获取
@@ -41,7 +41,7 @@ class MainActivity : BaseActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_bill, R.id.nav_slideshow, R.id.nav_settings
+                R.id.nav_home, R.id.nav_bill, R.id.nav_slideshow
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration) //将AppBarConfiguration和NavController绑定起来

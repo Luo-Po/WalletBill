@@ -4,28 +4,26 @@ import android.app.Application
 import android.view.View
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import top.nefeli.wallet.bill.R
 import top.nefeli.wallet.bill.base.BaseViewModel
-import top.nefeli.wallet.bill.persistence.walletBill.WalletBillDAO
-import top.nefeli.wallet.bill.persistence.walletBill.WalletBillDataBase
-import top.nefeli.wallet.bill.persistence.walletBill.WalletBillEntity
-import top.nefeli.wallet.bill.widget.BillAdapter
+import top.nefeli.wallet.bill.persistence.WalletBillDataBase
+import top.nefeli.wallet.bill.persistence.bill.BillDAO
+import top.nefeli.wallet.bill.persistence.bill.BillEntity
 
 class BillViewModel(application: Application): BaseViewModel() {
 
-    var root : View? = TODO()
-    private val walletBillDao: WalletBillDAO =
-        WalletBillDataBase.getInstance(application).WalletBillDAO()
+    var root : View? = null
+    private val billDao: BillDAO =
+        WalletBillDataBase.getInstance(application).BillDAO()
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is gallery Fragment"
     }
     val text: LiveData<String> = _text
 
-    private val _bill = MutableLiveData<List<WalletBillEntity>>().apply {
-        value = walletBillDao.getAll()
+    private val _bill = MutableLiveData<List<BillEntity>>().apply {
+        value = billDao.getAll()
     }
-    val bill: LiveData<List<WalletBillEntity>> = _bill
+    val bill: LiveData<List<BillEntity>> = _bill
 
     override fun onCleared() {
         super.onCleared()

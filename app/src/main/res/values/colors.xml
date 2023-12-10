@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Primary brand color. -->
-    <color name="Primary">?attr/colorPrimary</color>
-    <color name="PrimaryVariant">?attr/colorPrimaryVariant</color>
-    <color name="OnPrimary">?attr/colorOnPrimary</color>
+    <color name="Primary">@android:color/system_accent1_400</color>
+    <color name="PrimaryVariant">@android:color/system_accent1_300</color>
+    <color name="OnPrimary">@android:color/system_accent1_0</color>
     <!-- Secondary brand color. -->
-    <color name="Secondary">?attr/colorSecondary</color>
-    <color name="SecondaryVariant">?attr/colorSecondaryVariant</color>
-    <color name="OnSecondary">?attr/colorOnSecondary</color>
+    <color name="Secondary">@android:color/system_accent2_400</color>
+    <color name="SecondaryVariant">@android:color/system_accent2_300</color>
+    <color name="OnSecondary">@android:color/system_accent2_0</color>
 
-    <color name="Background">?attr/colorBackgroundFloating</color>
+    <color name="Background">@android:color/system_neutral1_10</color>
+    <color name="OnBackground">@android:color/system_neutral1_900</color>
+
+    <color name="Surface">@android:color/system_neutral1_10</color>
+    <color name="OnSurface">@android:color/system_neutral1_900</color>
 
 
 </resources>

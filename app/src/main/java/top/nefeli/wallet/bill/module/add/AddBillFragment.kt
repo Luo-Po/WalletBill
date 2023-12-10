@@ -6,13 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import top.nefeli.wallet.bill.base.BaseFragment
-import top.nefeli.wallet.bill.databinding.FragmentAddBinding
+import top.nefeli.wallet.bill.databinding.FragmentAddBillBinding
 
-class AddFragment : BaseFragment() {
+class AddBillFragment : BaseFragment() {
 
-    private var _binding: FragmentAddBinding? = null
+    private var _binding: FragmentAddBillBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,9 +22,9 @@ class AddFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val addViewModel: AddViewModel by viewModels()
+        val addViewModel: AddBillViewModel by viewModels()
 
-        _binding = FragmentAddBinding.inflate(inflater, container, false)
+        _binding = FragmentAddBillBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textView1

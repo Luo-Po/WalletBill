@@ -8,7 +8,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.recyclerview.widget.RecyclerView
 import top.nefeli.wallet.bill.R
-import top.nefeli.wallet.bill.persistence.walletBill.WalletBillEntity
+import top.nefeli.wallet.bill.persistence.bill.BillEntity
 
 
 ////每个子项被滚动到屏幕内的时候会被调用
@@ -36,9 +36,9 @@ import top.nefeli.wallet.bill.persistence.walletBill.WalletBillEntity
 
 
 //用于将上下文、listview 子项布局的 id 和数据都传递过来
-class BillAdapter(itemdata : List<WalletBillEntity>): RecyclerView.Adapter<BillViewHolder>() {
+class BillAdapter(itemdata : List<BillEntity>): RecyclerView.Adapter<BillViewHolder>() {
 
-    private val litemdata:List<WalletBillEntity>
+    private val litemdata:List<BillEntity>
     init {
         litemdata = itemdata
     }
@@ -50,7 +50,6 @@ class BillAdapter(itemdata : List<WalletBillEntity>): RecyclerView.Adapter<BillV
         private var amount: TextView
         private var date: TextView
         private var time: TextView
-
         init {
             note = itemView.findViewById<View>(R.id.list_item_bill_note) as TextView
             merchant = itemView.findViewById<View>(R.id.list_item_bill_merchant) as TextView
@@ -70,10 +69,10 @@ class BillAdapter(itemdata : List<WalletBillEntity>): RecyclerView.Adapter<BillV
     override fun onBindViewHolder(holder: BillViewHolder, position: Int) {
         val itemdata = litemdata[position]
         holder.note.text = itemdata.note
-        holder.merchant.text = itemdata.merchant
+        holder.merchant.text = itemdata.merchant.toString()
         holder.amount.setText(if(itemdata.amount>=0) Color.Green.toArgb() else Color.Red.toArgb())
         holder.amount.text = itemdata.amount.toString()
-        holder.date.text = itemdata.date
+        holder.date.text = "${itemdata.year}\\${itemdata.month}\\${itemdata.day}"
         holder.time.text = itemdata.time
     }
 

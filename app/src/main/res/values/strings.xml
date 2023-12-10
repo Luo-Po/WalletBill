@@ -11,5 +11,5 @@
     <string name="menu_bill"> 账单</string>
     <string name="menu_slideshow"> Slideshow</string>
     <string name="menu_settings"> 设置</string>
-    <string name="menu_add"> 添加</string>
+    <string name="menu_add_bill"> 记账</string>
 </resources>

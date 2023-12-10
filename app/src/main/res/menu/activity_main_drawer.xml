@@ -17,9 +17,9 @@
 
             android:title="@string/menu_slideshow" />
         <item
-            android:id="@+id/nav_add"
+            android:id="@+id/nav_add_bill"
 
-            android:title="@string/menu_add" />
+            android:title="@string/menu_add_bill" />
         <item
             android:id="@+id/nav_settings"
 
